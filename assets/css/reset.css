@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 95%;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+button, input, textarea, select {
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Andrianarisoa Vina</title>
+
+    <!-- Icon Link -->
+    <link rel="icon" href="assets/images/icons/icon.png" type="image/png">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div id="root">
+        <button id="scroll-top-btn" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up-icon lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
+        </button>
+
+        <!-- Header / Navigation -->
+        <header class="header">
+
+            <nav class="navbar container">
+                <a href="index.html" class="logo">ANDRIANARISOA <span class="text-primary font-bold">VINA</span></a>
+                
+                <!-- Desktop-menu -->
+                <ul class="nav-links-desktop">
+                    <li>
+                        <a href="#index">Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="#about">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projets</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Compétences</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile menu -->
+                <button id="toggle-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+                </button>
+                
+                <ul class="nav-links-mobile">
+                    <button id="close-menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </button>
+                    <li>
+                        <a href="#index">Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="#about">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projets</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Compétences</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- Main section -->
+        <main class="main">
+
+            <!-- Hero section -->
+            <section class="hero-section" id="index">
+                <div class="hero-content flex flex-col">
+                    <h2>Je suis <span class="text-primary font-bold">Vina</span>, développeur web en apprentissage, animé par une passion pour le design et les technologies du web.</h2>
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="assets/images/Hand coding-amico.svg" alt="Développeur au travail">
+                </div>
+            </section>
+
+            <!-- About section -->
+            <section class="about-section" id="about">
+                <h2 class="text-center text-primary font-bold">A propos</h2>
+
+                <div class="about-wrapper">
+                    <div class="about-content flex flex-col">
+                        <p>Je m'appelle <span class="text-primary font-bold">ANDRIANARISOA Vina</span>, étudiant et développeur web autodidacte.</p>
+                        <p>Passionné par le <span class="text-primary font-bold">web</span>, je me consacre à l'apprentissage continu du développement front-end (JavaScript, HTML, CSS), en menant des projets concrets et en explorant sans cesse de nouvelles idéés.</p>
+                        <p>J'attache une grande importance à l'autonomie, à la rigueur et à la créativité dans mon parcours.</p>
+                        <a href="assets/cv/Mon_CV_2025.pdf" download class="btn btn-primary">Télécharger mon CV</a>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="assets/images/profile.jpg" loading="lazy" alt="Photo de profil">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <template id="project-template">
+                <article class="project-card">
+                    <img class="project-image" src="" alt="" loading="lazy">
+                    <div class="project-info">
+                        <h3></h3>
+                        <p></p>
+                        <div class="project-links flex items-center">
+                            <a href="#" class="btn btn-primary" target="_blank">Voir</a>
+                            <a href="#" class="btn btn-primary" target="_blank">Code GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </template>
+
+            <section class="projects-section" id="projects">
+                <h2 class="text-center text-primary font-bold">Mes projets</h2>
+                
+                <div class="project-grid"></div>
+            </section>
+            
+            <!-- Skills Section -->
+            <section class="skills-section" id="skills">
+                <h2 class="text-center text-primary font-bold">Mes compétences</h2>
+
+                <div class="skills-grid">
+                    <div class="soft-skills">
+                        <h3 class="text-center">Soft skills</h3>
+                        <div class="skill">
+                            <p>Gestion de projet</p>
+                            <div class="progress-bar">
+                                <div class="progress" data-value="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Résolution de problème</p>
+                            <div class="progress-bar">
+                                <div class="progress" data-value="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Adaptabilité</p>
+                            <div class="progress-bar">
+                                <div class="progress" data-value="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hard-skills">
+                        <h3 class="text-center">Hard skills</h3>
+                        <div class="skill">
+                            <p>HTML</p>
+                            <div class="progress-bar">
+                                <div class="progress" data-value="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>CSS</p>
+                            <div class="progress-bar">
+                                <div class="progress" data-value="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Javascript</p>
+                            <div class="progress-bar">
+                                <div class="progress" data-value="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>VSCode</p>
+                            <div class="progress-bar">
+                                <div class="progress" data-value="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section" id="contact">
+                <div class="contact-description text-center">
+                    <h2>Vous avez un <span class="text-primary font-bold">projet en tête ?</span></h2>
+                    <h3>N'hésitez pas à me <span class="text-primary font-bold">contacter</span></h3>
+                </div>
+
+                <form class="contact-form flex flex-col" action="">
+                        <div class="custom-input flex justify-between">
+                            <div class="form-label">
+                                <label for="username">Votre prénom</label>
+                                <input id="username" type="text" placeholder="eg: Alice">
+                            </div>
+                            <div class="form-label">
+                                <label for="name">Votre nom</label>
+                                <input id="name" type="text" placeholder="eg: Cooper">
+                            </div>
+                        </div>
+
+                        <div class="form-label">
+                            <label for="subject">Votre sujet</label>
+                            <input id="subject type="text">
+                        </div>
+
+                        <textarea name="message" id="message" placeholder="Votre message..."></textarea>
+                        <button class="btn btn-primary">Envoyer</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>Designed by <span class="text-primary font-bold">Andrianarisoa Vina</span> with HTML CSS JS</p>
+                <p>&copy; Copyright 2025 - Tous droits réservés</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="assets/js/gsap.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="assets/js/utils.js"></script>
+</body>
+</html>

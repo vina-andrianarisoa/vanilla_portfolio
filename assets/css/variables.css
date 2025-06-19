@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #02A067;
+    --primary-dark: #0a0a0a;
+    --background-light: #f4f4f4;
+    --background-lightgray: #f0f0f0;
+    --background-dark: #1a1a1a;
+    --text-color: #222;
+    --text-light: #fff;
+    
+    --spacing: 1rem;
+    --radius: 8px;
+    --transition: 0.3s ease;
+    --font-bold: 700;
+    --shadow-sm: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-md: 2px 4px 10px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 4px 8px 10px rgba(0, 0, 0, 0.4);
+
+    --button-hover: #0f9161;
+    --button-active: #018353;
+}
