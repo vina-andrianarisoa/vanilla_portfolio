@@ -4,6 +4,17 @@ import scrollTop from "./utils/scrollTop.js";
 import testMyObserver from "./utils/testNewObserver.js";
 import useScrollProgressBar from "./utils/scrollProgressBar.js";
 
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+
+    gsap.to(loader, {
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        onComplete: () => loader.remove()
+    }); 
+});
+
 window.addEventListener("DOMContentLoaded", () => {
     useScrollProgressBar();
     setActiveLinkOnScroll();
