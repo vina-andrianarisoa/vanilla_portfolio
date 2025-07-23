@@ -1,0 +1,21 @@
+.btn {
+    font-weight: var(--font-bold);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--button-hover);
+}
+
+.btn:active {
+    scale: 0.99;
+    background-color: var(--button-active);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
