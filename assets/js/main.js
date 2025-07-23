@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 
     gsap.to(loader, {
         opacity: 0,
-        duration: 1,
+        duration: 2,
         ease: "power2.out",
         onComplete: () => loader.remove()
     }); 

@@ -81,7 +81,7 @@
         <main class="main">
 
             <!-- Hero section -->
-            <section class="hero-section" id="index">
+            <section class="hero-section container" id="index">
                 <div class="hero-content flex flex-col">
                     <h2>Je suis <span class="text-primary font-bold">Vina</span>, développeur web en apprentissage, animé par une passion pour le design et les technologies du web.</h2>
                     <a href="#projects" class="btn btn-primary">Voir mes projets</a>
@@ -94,18 +94,20 @@
 
             <!-- About section -->
             <section class="about-section" id="about">
-                <h2 class="text-center text-primary font-bold">A propos</h2>
+                <div class="container">
+                    <h2 class="text-center text-primary font-bold">A propos</h2>
+                    
+                    <div class="about-wrapper">
+                        <div class="about-content flex flex-col">
+                            <p>Je m'appelle <span class="text-primary font-bold">ANDRIANARISOA Vina</span>, étudiant et développeur web autodidacte.</p>
+                            <p>Passionné par le <span class="text-primary font-bold">web</span>, je me consacre à l'apprentissage continu du développement front-end (JavaScript, HTML, CSS), en menant des projets concrets et en explorant sans cesse de nouvelles idéés.</p>
+                            <p>J'attache une grande importance à l'autonomie, à la rigueur et à la créativité dans mon parcours.</p>
+                            <a href="assets/cv/Mon_CV_2025.pdf" download class="btn btn-primary">Télécharger mon CV</a>
+                        </div>
 
-                <div class="about-wrapper">
-                    <div class="about-content flex flex-col">
-                        <p>Je m'appelle <span class="text-primary font-bold">ANDRIANARISOA Vina</span>, étudiant et développeur web autodidacte.</p>
-                        <p>Passionné par le <span class="text-primary font-bold">web</span>, je me consacre à l'apprentissage continu du développement front-end (JavaScript, HTML, CSS), en menant des projets concrets et en explorant sans cesse de nouvelles idéés.</p>
-                        <p>J'attache une grande importance à l'autonomie, à la rigueur et à la créativité dans mon parcours.</p>
-                        <a href="assets/cv/Mon_CV_2025.pdf" download class="btn btn-primary">Télécharger mon CV</a>
-                    </div>
-
-                    <div class="about-image">
-                        <img src="assets/images/profile.jpg" loading="lazy" alt="Photo de profil">
+                        <div class="about-image">
+                            <img src="assets/images/profile.jpg" loading="lazy" alt="Photo de profil">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -125,7 +127,7 @@
                 </article>
             </template>
 
-            <section class="projects-section" id="projects">
+            <section class="projects-section container" id="projects">
                 <h2 class="text-center text-primary font-bold">Mes projets</h2>
                 
                 <div class="project-grid"></div>
@@ -133,60 +135,61 @@
             
             <!-- Skills Section -->
             <section class="skills-section" id="skills">
-                <h2 class="text-center text-primary font-bold">Mes compétences</h2>
+                <div class="container">
+                    <h2 class="text-center text-primary font-bold">Mes compétences</h2>
 
-                <div class="skills-grid">
-                    <div class="soft-skills">
-                        <h3 class="text-center">Soft skills</h3>
-                        <div class="skill">
-                            <p>Gestion de projet</p>
-                            <div class="progress-bar">
-                                <div class="progress" data-value="90%"></div>
+                    <div class="skills-grid">
+                        <div class="soft-skills">
+                            <h3 class="text-center">Soft skills</h3>
+                            <div class="skill">
+                                <p>Gestion de projet</p>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Résolution de problème</p>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Adaptabilité</p>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="80%"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill">
-                            <p>Résolution de problème</p>
-                            <div class="progress-bar">
-                                <div class="progress" data-value="80%"></div>
+                        
+                        <div class="hard-skills">
+                            <h3 class="text-center">Hard skills</h3>
+                            <div class="skill">
+                                <p>HTML</p>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="90%"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill">
-                            <p>Adaptabilité</p>
-                            <div class="progress-bar">
-                                <div class="progress" data-value="80%"></div>
+                            <div class="skill">
+                                <p>CSS</p>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="90%"></div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="hard-skills">
-                        <h3 class="text-center">Hard skills</h3>
-                        <div class="skill">
-                            <p>HTML</p>
-                            <div class="progress-bar">
-                                <div class="progress" data-value="90%"></div>
+                            <div class="skill">
+                                <p>Javascript</p>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="80%"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill">
-                            <p>CSS</p>
-                            <div class="progress-bar">
-                                <div class="progress" data-value="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <p>Javascript</p>
-                            <div class="progress-bar">
-                                <div class="progress" data-value="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <p>VSCode</p>
-                            <div class="progress-bar">
-                                <div class="progress" data-value="70%"></div>
+                            <div class="skill">
+                                <p>VSCode</p>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="70%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <!-- Contact Section -->
